@@ -12,28 +12,28 @@ html, body, *{
     display: flex;
     width: 90vw;
     margin: 2rem auto;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 .card{
-    width: 30rem;
-    height: 35rem;
-    border: 2px solid hotpink;
+    width: 26%;
+    height: 50rem;
+    border: 5px solid hotpink;
     border-radius: 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-bottom: 5%;
 }
-.card-img{
-    width: 100%;
-    height: 40%;
+.image{
+    width: 80%;
+    height: 80%;
     object-fit: cover;
-    flex-direction: column;
-    text-align: center;
 }
 .card-header{
     font-size: 2.2rem;
-    margin-top: 1.2rem;
+    margin-top: 2rem;
 }
