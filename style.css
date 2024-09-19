@@ -29,7 +29,16 @@ html, body, *{
     justify-content: space-around;
     margin-bottom: 5%;
     background-color: rgb(255, 182, 193);
-    min-width: 35rem;
+}
+@media screen and (max-width: 1200px) { 
+    .card {
+        width: 40%
+    }
+}
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 51%
+    }    
 }
 .image{
     width: 80%;
