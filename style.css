@@ -4,7 +4,9 @@ html, body, *{
     margin: 0;
     padding: 0;
     background-color: rgb(211, 211, 211);
+    font-family: "Roboto Mono", monospace;
 }
+
 #Title{
     text-align: center;
     font-size: 75px;
@@ -19,7 +21,7 @@ html, body, *{
     justify-content: space-around;
 }
 .card{
-    width: 26%;
+    width: 21%;
     height: 50rem;
     border: 5px solid rgb(0, 0, 0);
     border-radius: 3px;
@@ -29,6 +31,8 @@ html, body, *{
     justify-content: space-around;
     margin-bottom: 5%;
     background-color: rgb(255, 182, 193);
+    transition: all 1s;
+    box-shadow: 1rem 1rem rgb(255,255,255);
 }
 @media screen and (max-width: 1200px) { 
     .card {
@@ -49,21 +53,36 @@ html, body, *{
     font-size: 2.2rem;
     margin-top: 2rem;
 }
-#big{
-    transition: all 0.3s;
+@keyframes blacknwhite {
+0% {
+    filter: grayscale(0%);
+    opacity: 1;
+    box-shadow: 1rem 1rem rgb(255,255,255);
 }
+50% {
+    filter: grayscale(100%);
+    opacity: 1;
+    box-shadow: 1rem 1rem rgb(255,255,0);
+}
+}
+#glow{
+animation: blacknwhite 2s infinite;
+}
+
 #big:hover{
-    transform: scale(3) translateX(-18rem);
+    transform: scale(3);
 }
-#bigspin{
-    transition: all 1s;
-}
+
 #bigspin:hover{
-    transform: scale(3) translateX(18rem) rotate(10turn);
+    transform: scale(3) rotate(10turn);
 }
-#skew{
-    transition: all 1s;
-}
+
 #skew:hover{
     transform: scale(3) skew(-360deg);;
+}
+#translateL:hover{
+    transform: translate(-60rem);
+}
+#squish:hover{
+    transform: scale(4,0.5);
 }
